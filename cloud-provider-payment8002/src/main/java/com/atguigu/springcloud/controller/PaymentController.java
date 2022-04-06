@@ -48,4 +48,8 @@ public class PaymentController {
             return new CommonResult(444,"查询失败，id:"+id,paymentById);
         }
     }
+    @GetMapping("lb")
+    public String lb() {
+        return serverPort;
+    }
 }
